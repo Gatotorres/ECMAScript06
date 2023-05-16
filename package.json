@@ -1,0 +1,22 @@
+{
+  "name": "ecmascript06",
+  "version": "1.0.0",
+  "description": "Curso con Oscar Barajas ECMAScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": " "
+  },
+  "keywords": [
+    "javascript",
+    "ecmascript",
+    "curso",
+    "online",
+    "platzi"
+  ],
+  "author": "Nahuel Torres <sr.nahueltorresgmail.com>",
+  "license": "MIT"
+}
