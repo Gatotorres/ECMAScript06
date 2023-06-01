@@ -3,9 +3,12 @@
 let hello = "hello";
 let world = "world";
 let epicPharase = hello + ' ' + world + '!';
- 
+
 
 // TEMPLATE LITERALS
 
 let epicPharase2 = `${hello} ${world}!`;
 console.log (epicPharase2);
+
+//USAMOS LAS COMILLAS FRANCESAS -> `` PARA PONER DENTRO NUESTRO CODIGO
+//LUEGO DECLARAR LAS VARIABLES CON $ y LLAVES, ESTO NOS PERMITE ESPACIAR CARÁCTERES AUTOMÁTICAMENTE.
