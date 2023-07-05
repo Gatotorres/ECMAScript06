@@ -110,8 +110,8 @@ console.log(originalArray[1] === copyArray[1]); // false    ✅ Devuelve el valo
 // que acepten cualquier número de argumentos para agruparlos en un array.
 
 function hola (primero, segundo, ...resto) {
-    console.log(primero, segundo)  // 1 2
-    console.log(resto) // [3,4,5,6]
+  console.log(primero, segundo)  // 1 2
+  console.log(resto) // [3,4,5,6]
   }
 
 hola(1,2,3,4,5)
@@ -122,9 +122,9 @@ hola(1,2,3,4,5)
 //También sirve para obtener los elementos restantes de un array u objeto usando desestructuración.
 
 const objeto = {
-    nombre: "Andres",
-    age: 23,
-    plataforma: "Platzi"
+  nombre: "Andres",
+  age: 23,
+  plataforma: "Platzi"
 }
 const array = [0,1,2,3,4,5]
 

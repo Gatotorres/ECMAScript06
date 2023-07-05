@@ -18,5 +18,6 @@
     "platzi"
   ],
   "author": "Nahuel Torres <sr.nahueltorresgmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "type":"module"
 }
