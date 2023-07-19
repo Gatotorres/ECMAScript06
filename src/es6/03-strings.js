@@ -7,8 +7,10 @@ let epicPharase = hello + ' ' + world + '!';
 
 // TEMPLATE LITERALS
 
-let epicPharase2 = `${hello} ${world}!`;
+let epicPharase2 = `${'hello'} ${'world'}!`;
 console.log (epicPharase2);
+//hello world!
+//✅ Devuelve el valor esperado
 
 //USAMOS LAS COMILLAS FRANCESAS -> `` PARA PONER DENTRO NUESTRO CODIGO
 //LUEGO DECLARAR LAS VARIABLES CON $ y LLAVES, ESTO NOS PERMITE ESPACIAR CARÁCTERES AUTOMÁTICAMENTE.
