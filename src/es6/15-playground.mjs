@@ -1,6 +1,6 @@
 //Generador de identificadores para michis
 
-Export function* getId(){
+export function* getId(){
     //tu código aquí
 }
 // En la guardería de michis "Michilango", están registrando nuevos michis, 
@@ -14,7 +14,7 @@ Export function* getId(){
 //cada vez que se llame a la funcion de la siguiente forma debería retornarme
 // un identificador nuevo y completamente diferente
 
-const id = getId();
+const id1 = getId();
 
 id.next().value;
 
@@ -30,7 +30,7 @@ id.next().value;
 
 // input:
 
-const id = getId();
+const id2 = getId();
 id.next().value;
 id.next().value;
 id.next().value;
@@ -74,7 +74,7 @@ getId();
 
 
 ///////////////////////////////////////////////////
-CON AIUDA DE LA IA open.IA
+// CON AIUDA DE LA IA open.IA
 ///////////////////////////////////////////////////
 function* getIdGato(nombreGato) {
     let count = 1;
@@ -93,7 +93,7 @@ function* getId() {
 
 // Ejemplo de uso:
 
-const idGenerator = getId();
+const idGenerator1 = getId();
 
 console.log(idGenerator.next().value); // G01H2UQ8
 console.log(idGenerator.next().value); // G02S5RT3
@@ -114,14 +114,14 @@ function* getId() {
 }
 
 // Ejemplo de uso
-const idGenerator = getId();
+const idGenerator2 = getId();
 
 console.log(idGenerator.next()); // 1
 console.log(idGenerator.next().value); // 2
 console.log(idGenerator.next()); // 3
 
 // Reiniciar el contador para obtener nuevos identificadores
-const idGenerator2 = getId();
+const idGenerator3 = getId();
 console.log(idGenerator2.next().value); // 1
 console.log(idGenerator2.next().value); // 2..
 
