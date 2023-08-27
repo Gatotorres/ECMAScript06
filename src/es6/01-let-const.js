@@ -1,7 +1,10 @@
 var varName = "ALGO"; // ACA DECLARAMOS E INICIALIZAMOS CON VAR
-lastName = "OTRO" ; // ACA RE DECLARAMOS LA VARIABLE VAR
+varName = "OTRO" ; // ACA RE DECLARAMOS LA VARIABLE VAR
 console.log(varName); // ACA CON EL COMANDO RUN CODE DEL CLICK DERECHO,
 // EJECUTAMOS, Y VEMOS EL CÓDIGO EN SALIDA (no se porqué ahí)
+
+//VAR PUEDE SER RE DECLARADA
+//✅ Devuelve el valor esperado
 
 let letName = "ALGO";  // ACÁ DECLARAMOS E INICIALIZAMOS CON LET
 letName = "OTRO" ;  //  ACA RE-ASIGNAMOS LA VARIABLE LET
@@ -19,7 +22,7 @@ console.log(constName); // VEMOS EN SALIDA TypeError: Assignment to constant var
 // ACA VEMOS COMO  AL INTENTAR LLAMAR A LET FUERA DE LA FUNCIÓN IF{} 
 //DEVUELVE: ReferenceError: nameLet is not defined
 
-const fruits = () => {
+const fruits = (nameLet,nameConst) => {
 if (true) {
     var nameVar = "NameVar";  // FUNCTION SCOPE 
     let nameLet = "NameLet";  // BLOCK SCOPE
