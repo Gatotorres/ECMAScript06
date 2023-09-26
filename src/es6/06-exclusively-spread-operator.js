@@ -68,8 +68,8 @@ const array1 = [1,2,3]
 const number = 4
 const array2 = [5,6,7]
 
-const otherArray = [ ...array1, number, ...array2 ]
-console.log(otherArray); //                           ✅ Devuelve el valor esperado
+const otherArray100 = [ ...array1, number, ...array2 ]
+console.log(otherArray100); //                           ✅ Devuelve el valor esperado
 
 // [
 //  1, 2, 3, 4,
@@ -82,10 +82,10 @@ console.log(otherArray); //                           ✅ Devuelve el valor espe
 //si existen objetos o arrays dentro del array a copiar. Entonces los sub-elementos en cada nivel,
 // tendrán la misma referencia de memoria en la copia y en el original
 
-const originalArray = [1, [2,3] ,4,5]
-const copyArray = [...originalArray]
+const originalArray10 = [1, [2,3] ,4,5]
+const copyArray = [...originalArray10]
 
-console.log(originalArray[1] === copyArray[1]); //true ✅ Devuelve el valor esperado
+console.log(originalArray10[1] === copyArray[1]); //true ✅ Devuelve el valor esperado
 
 
 // La manera de solucionar es más compleja,
@@ -94,11 +94,11 @@ console.log(originalArray[1] === copyArray[1]); //true ✅ Devuelve el valor esp
 //Sin embargo, recientemente salió una forma de producir una copia profunda con StructuredClone,
 // aunque es una característica muy reciente, así que revisa que navegadores tienen soporte
 
-const originalArray = [1, [2,3] ,4,5]
-const copyArray = structuredClone(originalArray)
+const originalArray20 = [1, [2,3] ,4,5]
+const copyArray = structuredClone(originalArray20)
 
-console.log(originalArray === copyArray); // false          ✅ Devuelve el valor esperado
-console.log(originalArray[1] === copyArray[1]); // false    ✅ Devuelve el valor esperado
+console.log(originalArray20 === copyArray); // false          ✅ Devuelve el valor esperado
+console.log(originalArray20[1] === copyArray[1]); // false    ✅ Devuelve el valor esperado
 
 
 //Parámetro rest
@@ -126,10 +126,10 @@ const objeto = {
   age: 23,
   plataforma: "Platzi"
 }
-const array = [0,1,2,3,4,5]
+const array10 = [0,1,2,3,4,5]
 
 const {plataforma, ...usuario} = objeto
-const [cero, ...positivos] = array
+const [cero, ...positivos] = array10
 
 console.log(usuario); // { nombre: 'Andres', age: 23 }    ✅ Devuelve el valor esperado
 console.log(positivos); // [ 1, 2, 3, 4, 5 ]              ✅ Devuelve el valor esperado
@@ -141,12 +141,12 @@ console.log(positivos); // [ 1, 2, 3, 4, 5 ]              ✅ Devuelve el valor 
 //el operador de propagación expande los elementos de un iterable en un array
 // y no importa en que lugar esté situado
 
-const array = [1,2,3,4,5]
+const array20 = [1,2,3,4,5]
 
 function hola (primero, segundo, ...resto) { // <- Parámetro Rest
   console.log(primero, segundo)  // 1 2                    ✅ Devuelve el valor esperado
   console.log(resto) // [3,4,5, "final"]                   ✅ Devuelve el valor esperado
 }
 
-hola(...array, "final") //<- Operador de propagación
+hola(...array20, "final"); //<- Operador de propagación
 //Lo mismo que hacer -> hola(1,2,3,4,5, "final")

@@ -28,3 +28,5 @@ console.table(matchers);
 */
 
 //✅ Devuelve el valor esperado
+
+//Esto es porque estamos utilizando console.table() en vez de console.log()
