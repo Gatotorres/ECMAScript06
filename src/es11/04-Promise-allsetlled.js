@@ -18,10 +18,18 @@ Resolved tambien te zarpaste
 ]
 */
 
+
+//Como se vé, el Promise.allSettled nos devuelve una matriz
+//con UN ARRAY DE OBJETOS con los resultados de las promesas seleccionadas
+
 //"resolve" y "reject" no son palabras reservadas 
 // pero sí comúnmente usadas en la sintaxis de una promesa. 
 //Se puede usar cualquier nombre como:
 
-new Promise((simon, nel ) => (true) ? simon(console.log("jamon")) : nel(console.log("queso")));
+new Promise((simon, nel ) => (true) 
+? simon(console.log("jamon")) : nel(console.log("queso")));
 
 // jamon
+
+//dice que tambien existe Promise.all([,,,])
+//pero que este, solo se ejecuta si todas las promesas se ejecutaron correctamente
