@@ -35,7 +35,7 @@ for (const match of fruit.matchAll(regex)) {
 //de donde fué encontrada, el input, y groups, son tambien datos.
 
 
-//y si le hubiera puesto 2 apple mas, hubiera devuelto 2 arrays extras?
+//y si le hubiera puesto 2 apple mas, hubiera devuelto 2 arrays extras.
 
 const regex2 = /\b(Apple)+\b/g;
 
@@ -75,5 +75,3 @@ for (const match of fruit2.matchAll(regex2)) {
   groups: undefined
 ]
 */
-
-//si afirmativo. sucede de tal forma.
