@@ -11,30 +11,40 @@ class user {
         this.name =name;
         this.age = age;
     }
-    //Métodos AHORA Privado
+    //speak es un método AHORA Privado
     #speak() {
         return 'Hello';
     }
+
+    //solo puede ser accedido dentro de la misma clase
+
     greeting() {
         return `${this.speak()} ${this.name}`
     }
 
-    //CON ESTO LEEREMOS UN VALOR 
+    //CON ESTO tendremos un getter privado 
     get #uAge() {
         return this.age;
     }
 
-    //CON ESTO MODIFICAREMOS UN VALOR
+    //CON ESTO tendremos un setter privado 
     set #uAge(n) {
         this.age = n;
     }
 }
 const OtroUusarioo = new user ('Fumanchú', 43);
 console.log(OtroUusarioo.uAge);
-//Ahora le vamos a cambiar el valor, esto es gracias al SET
-console.log(OtroUusarioo.uAge = 20);
+console.log(OtroUusarioo.speak);
+console.log(OtroUusarioo.greeting);
 
 //undefined
+//undefined
+//[Function: greeting]
+
+//Ahora le vamos a cambiar el valor, esto es gracias al SET
+//y gracias a esto, es que podemos ver el 20 de respuesta 
+
+console.log(OtroUusarioo.uAge = 20);
 
 //20
 

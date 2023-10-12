@@ -7,7 +7,7 @@
 
 const promise1 = new Promise ((resolve, reject) => reject("Reject"));
 const promise2 = new Promise ((resolve, reject) => resolve("APUESTO QUE ESTA ES LA QUE SE VA A VERRRRRRRRRRRR"));
-const promise3 = new Promise ((resolve, reject) => reject("Reject"));
+const promise3 = new Promise ((resolve, reject) => resolve("Reject"));
 
 Promise.any([promise1, promise2, promise3])
     .then(response => console.log(response));
